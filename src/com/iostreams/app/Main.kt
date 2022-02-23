@@ -22,7 +22,7 @@ fun socketTry() {
         var bos = BufferedOutputStream( socket.getOutputStream() )
 
         // 3. exchange messages
-        bos.write( "Hello world\r\n\r\n".toByteArray() )
+        bos.write( "GET /index.php/berita/lihatBerita HTTP/1.1\r\nHost: monta.if.its.ac.id\r\n\r\n".toByteArray() )
         bos.flush()
 
         //
